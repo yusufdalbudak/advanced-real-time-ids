@@ -46,7 +46,7 @@ TRAFFIC_THRESHOLD = int(os.getenv("TRAFFIC_THRESHOLD"))
 
 
 # Configuration
-TARGET_IP = "192.168.1.104"  # Target IP address
+TARGET_IP = "192.168.x.x"  # <-Target IP address
 SUS_PATTERNS = [b'danger.com', b'unauthorized_access']
 SUS_KEYWORDS = [b'login', b'admin', b'password', b'hack', b'attack']
 TRAFFIC_THRESHOLD = 50
@@ -163,7 +163,7 @@ def main():
     initialize_csv()
 
     # Start packet capture
-    iface = "\\Device\\NPF_{E0A12ABF-94F4-4807-B846-6F189708C6E6}"
+    iface = "\\Device\\NPF_{E0A12ABF-94F4-4807-****-**********}" #<-- Write your iface. 
     try:
         sniff(iface=iface, prn=packet_callback, store=0)
     except KeyboardInterrupt:
