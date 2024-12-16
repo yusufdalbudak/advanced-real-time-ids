@@ -24,7 +24,6 @@ This project is designed to help network administrators identify potential secur
 ```
 ├── test/                  # Source folder
 │   ├── test_preprocess.py # Main IDS script
-│   ├── test_detection.py  # Additional detection logic (if any)
 │   ├── config.json        # JSON-based configuration file
 │   └── .env               # Environment variables for sensitive data
 
@@ -55,7 +54,7 @@ This project is designed to help network administrators identify potential secur
 
 5. **Run the IDS**:
    ```bash
-   python test/test_preprocess.py
+   python test_preprocess.py
    ```
 
 ---
