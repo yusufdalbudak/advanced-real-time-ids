@@ -86,18 +86,18 @@ This project is designed to help network administrators identify potential secur
 ## Example Output
 **Real-Time Terminal Log**:
 ```
-[2024-12-16 03:33:07] Src: 192.168.1.104 (R3V3R53) -> Dst: 34.116.74.210 (210.74.116.34.bc.googleusercontent.com),
+[2024-12-16 03:33:07] Src: 192.168.*.*** (R3V3R53) -> Dst: 34.***.**.*** (210.**.***.**.*********tent.com),
 Protocol: TCP, Status: Normal, Details: Normal Traffic
 
-[2024-12-16 03:33:09] Src: 192.168.1.104 (R3V3R53) -> Dst: 172.217.19.131 (par031s12-in-f131.1e100.net),
+[2024-12-16 03:33:09] Src: 192.168.*.*** (R3V3R53) -> Dst: 172.***.**.*** (************e100.net),
 Protocol: UDP, Status: Suspicious, Details: Large Payload Detected: 1250 bytes
 ```
 
 **CSV Log Example**:
 ```csv
 Timestamp,Source IP,Source Hostname,Destination IP,Destination Hostname,Source Port,Destination Port,Protocol,Payload Size,Details,Status
-2024-12-16 03:33:09,192.168.1.104,R3V3R53,172.217.19.131,par031s12-in-f131.1e100.net,443,443,TCP,0,Normal Traffic,Normal
-2024-12-16 03:33:12,192.168.1.104,R3V3R53,34.116.74.210,googleusercontent.com,58034,443,UDP,1250,LARGE PAYLOAD DETECTED,Suspicious
+2024-12-16 03:33:09,192.168.*.***,R3V3R53,172.***.**.***,**********.1e100.net,443,443,TCP,0,Normal Traffic,Normal
+2024-12-16 03:33:12,192.168.*.***,R3V3R53,34.***.**.***,************.com,58034,443,UDP,1250,LARGE PAYLOAD DETECTED,Suspicious
 ```
 
 ---
